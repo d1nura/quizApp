@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="add">
+      <div id="wrap">
+        <div id="form">
+          <div>
+            <h4>Add a question</h4>
+            <textarea id="txtArea"></textarea>
+          </div>
+          <div id="numberFlex">
+            <div id="btt">
+              <button id="regBtn" class="minus" onclick="minus()">-</button>
+              <input id="number" type="text" />
+              <button id="regBtn" class="plus" onclick="plus()">+</button>
+            </div>
+            <h4>No Of Answers</h4>
+
+            <button id="regBtn" onclick="setNumber()">set</button>
+          </div>
+          <div>
+            <h4>Add Answers</h4>
+            <input type="text" id="addAnswersInput" />
+            <button id="regBtn" class="addAnswersBtn" onclick="addAnswers()">
+              +
+            </button>
+            <h4 id="oneOf">
+              <span id="zero">0</span> of <span id="num">0</span>
+            </h4>
+          </div>
+          <div>
+            <h4>Add Correct Answer</h4>
+            <input type="text" id="correctAns" />
+          </div>
+          <div>
+            <button id="submit" onclick="putOn()">Add !</button>
+            <!--<button class="closeBtn" id="submit" onclick="closee()">
+              close
+            </button>-->
+            <button id="runMain" onclick="closee()">Submit</button>
+          </div>
+        </div>
+        <div class="model">
+          <div id="modelWrap"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home">
+      <button id="main-btn" onclick="openB()">+</button>
+      <div class="mainQuiz">
+        <h3 id="question"></h3>
+        <ul id="answers"></ul>
+      </div>
+      <div class="score">
+        <div class="scoreCard">
+          <button id="closeBtn" onclick="closeScore()">X</button>
+          <h1>Score</h1>
+          <span id="scoreCard"></span>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
